@@ -1,0 +1,34 @@
+#game-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#game-container__board {
+  border: 1px solid black;
+}
+.game-container__board__place {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  background: #666;
+  cursor: pointer;
+  text-align: center;
+  line-height: 20px;
+  overflow: hidden;
+}
+.game-container__board__place:hover {
+  background: grey;
+}
+
+.game-container__board__place--bomb {
+  font-size: 40px;
+}
+.game-container__board__place--visible {
+  background: white;
+}
+.game-container__board__place--visible:hover {
+  background: white;
+}
